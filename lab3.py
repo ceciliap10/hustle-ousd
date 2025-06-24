@@ -37,3 +37,6 @@ books = {"Elisabetta Dami": "Four Mice Deep in the Jungle","Dr.Seuss": "Cat In T
 
 print(books.keys ())
 print(books.values ())
+print(books.get())
+print(books.pop())
+print(books.del())
