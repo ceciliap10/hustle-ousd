@@ -1,0 +1,23 @@
+-- Pseudocode Alarm Clock Cecilia Palau
+
+Start
+
+1. Open the alarm clock on device
+2. Set a specific alarm time in app
+3. Click on alarm sound options and choose the ring you would like for your alarm
+4. Set extra effects such as vibrations
+
+When the alarm rings
+
+1. Option to snooze
+ a. Add 5 minutes
+
+ Loop till snooze time is over
+ a. Give x amount of minutes
+ b. Press stop and wake up
+
+2. Wake up with the alarm, press stop
+
+If press stop and wake up, 
+
+End
