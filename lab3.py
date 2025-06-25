@@ -39,4 +39,4 @@ print(books.keys ())
 print(books.values ())
 print(books.get())
 print(books.pop())
-print(books.del())
+del books ["Dr.Seuss"]
