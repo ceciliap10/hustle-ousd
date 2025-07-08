@@ -1,14 +1,14 @@
 #Cecilia Palau Debugging Activity
 
 #Case 1
-#Zero Devision Error, can not be devided by 0, chamnged one of the values to something other than 0
+#Zero Devision Error, can not be devided by 0, changed one of the values to something other than 0
 x = 10
 y = 2.5
 result = x/y
 print("Result", result)
 
 #Case 2
-#Index out of range error, dont put i+1 becuad it will be searching for an index that does not exsist, just leave i
+#Index out of range error, dont put i+1 because it will be searching for an index that does not exsist, just leave i
 numbers = [1,2,3,4,5]
 for i in range(len(numbers)):
     print(numbers[i])
@@ -21,7 +21,7 @@ def calculate_area(radius):
 
 
 #Case 4
-#Syntax error after the if statement there needs to be a colon (:) as well as the else 
+#Syntax error after the if statement there needs to be a colon : as well as the else statement 
 def is_even(number):
    if number % 2 == 0:
        return True
@@ -42,7 +42,7 @@ def greet(name):
    return "Hello,  name"
 
 #Case 7 
-#Indentation error, need to have lines indented after the for loop stateme t
+#Indentation error, need to have lines indented after the for loop statement
 numbers = [1, 2, 3, 4, 5]
 sum = 0
 for number in numbers:
@@ -60,10 +60,19 @@ def factorial(n):
 print(factorial(5))
 
 #Case 9
-#Syntax error, parenthesos are needed after the if statement
+#Syntax error, parenthesis are needed after the if statement
 name = input("Enter your name: ")
 if name == ("Alice" or "Bob"):
    print("Hello, " + name)
 else:
    print("Hello, stranger!")
 
+#Case 10
+#Zero devision error, cant devide number by 0
+def divide_numbers(x, y):
+   result = x / y
+   return result
+ 
+num1 = 10
+num2 = 5
+print(divide_numbers(num1, num2))
