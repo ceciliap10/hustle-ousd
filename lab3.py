@@ -5,7 +5,7 @@
 food = "Pupusas de Frijol"
 
 print(food[0:3])
-print (food[-4])
+print (food[-4:])
 
 first_last= food[0] + food[-1]
 
@@ -25,12 +25,14 @@ print(number_list)
 
 number_list.insert(3,"element")
 
-number_list.pop
+number_list.get("Elisabetta Dami")
+
+number_list.pop("The Very Hungry Catepillar")
 
 number_list.remove(number_list[1])
 
 print (number_list [0:3])
-print (number_list [-4])
+print (number_list [-4:])
 
 books = {"Elisabetta Dami": "Four Mice Deep in the Jungle","Dr.Seuss": "Cat In The Hat", "Erik Carle":"The Very Hungry Catepillar", "Marcus Pfister": "The Rainbow Fish"}
 
