@@ -39,7 +39,7 @@ for i in range(5):
 #Case 6 
 #Syntax error, always close your quotes!  
 def greet(name):
-   return "Hello,  name"
+   return "Hello, {name}"
 
 #Case 7 
 #Indentation error, need to have lines indented after the for loop statement
