@@ -36,10 +36,12 @@ print(generate_superhero_power2("Cecilia", "Speak to animals"))
 
 #step 5
 def cat_greetings_loop(greeting):
-    greeting = ["meow", "purr", "woof"]
+    greeting = ["meow", "purr", "scratch"]
     #Can also jut put 5
     for i in range(0,5):
         print(f'The cat says {greeting}')
+greeting = ["meow", "purr", "scratch"]        
+cat_greetings_loop(greeting)        
 
 #can also do a little more understandable: 
 # def cat_greeting_loop():
@@ -54,4 +56,4 @@ def generate_multiple_superpowers(powers):
 
 powers_list = ["Breathing under water", "Teleporting", "Speaking to animals"]
 
-generate_multiple_superpowers(powers_list)
+generate_multiple_superpowers(powers_list)#calling function with argument
