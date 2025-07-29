@@ -27,6 +27,7 @@ class Hero:
         total_damage = 0
         for ability in self.abilities:
             total_damage += ability.attack()
+            return total_damage
 
     def add_armor(self,new_armor):
         self.armor_list.append(new_armor)
@@ -34,7 +35,7 @@ class Hero:
     def defend(self):
         total_defense = 0
         for armor in self.armor_list:
-            total_defense += armor.block()
+            total_defense += armor.max_block()
             return total_defense
 
 
