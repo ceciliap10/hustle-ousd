@@ -1,6 +1,6 @@
 #I want a program that will create, delet, update and read.
 
-cookbook = () 
+cookbook = [] 
 
 def create(recipie):
     cookbook.append(recipie)
@@ -12,16 +12,16 @@ def read(index):
         return cookbook[index] #The index will change depending on where we are in the list
     else:
         print("Please pick an index within range")
-        read(index)#Recurtion, calling a function within itself, not required
+
 
 def update(index, recipie):
-    cookbook.update(recipie)
+    cookbook.append(recipie)
     print(f"The recipie {recipie} has been updated in your cookbook")
 
 def destroy(index):
     if index < len(cookbook):
-        cookbook.remove(recipie)
-        print(f"The recipie {recipie} has been removed for your cookbook")
+        cookbook.remove(index)
+        print(f"The recipie {index} has been removed for your cookbook")
     else:
         print("Please pick an index within range")    
 
@@ -43,7 +43,8 @@ def main():
 
         choice = input("Choose an option (1-6): ")
 
-
+        list_all_recipies(cookbook)
+        
         if choice == "1":
             recipe = input("Enter the name of the recipe: ")
             create(recipe)
@@ -61,7 +62,7 @@ def main():
             index = int(index)
             destroy(index)
         elif choice == "5":
-            list_all_recipes()
+            list_all_recipies(cookbook)
         elif choice == "6":
             print("Exiting the program.")
             break
